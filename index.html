@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DubaiProblems - Fix Your Problems in Dubai</title>
+    <meta content="Confidential assistance for Legal, Visa, Travel Bans, and Scam protection in the UAE." name="description">
+
+    <link rel="icon" type="image/png" href="dpl.png">
+    <link rel="apple-touch-icon" href="dpl.png">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dubaiproblems.com/">
+    <meta property="og:title" content="DubaiProblems - Fix Your Problems in Dubai">
+    <meta property="og:description" content="Confidential assistance for Legal, Visa, Travel Bans, and Scam protection in the UAE.">
+    <meta property="og:image" content="thumb.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="DubaiProblems - Fix Your Problems in Dubai">
+    <meta name="twitter:description" content="Confidential assistance for Legal, Visa, Travel Bans, and Scam protection in the UAE.">
+    <meta name="twitter:image" content="thumb.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --accent: #E2B13C; /* Desert Gold */
+            --bg: #0B0F13;
+            --card-bg: rgba(255, 255, 255, 0.05);
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --text-main: #FFFFFF;
+            --text-dim: #A0A0A0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .bg-glow {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 50% -20%, #1e293b 0%, #0b0f13 100%);
+            z-index: -1;
+        }
+
+        nav {
+            backdrop-filter: blur(15px);
+            background: rgba(11, 15, 19, 0.7);
+            border-bottom: 1px solid var(--glass-border);
+            padding: 20px 8%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-weight: 800;
+            font-size: 1.4rem;
+            letter-spacing: -1px;
+            color: var(--text-main);
+            text-transform: uppercase;
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        .hero {
+            padding: 100px 8% 60px;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            line-height: 1.1;
+            margin-bottom: 24px;
+            font-weight: 800;
+            background: linear-gradient(to bottom, #fff 0%, #888 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            color: var(--text-dim);
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+        }
+
+        .wa-btn {
+            background: var(--accent);
+            color: #000;
+            padding: 16px 40px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 10px 30px rgba(226, 177, 60, 0.3);
+        }
+
+        .wa-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(226, 177, 60, 0.5);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            padding: 40px 8% 100px;
+        }
+
+        .glass-card {
+            background: var(--card-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            padding: 40px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .glass-card:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: var(--accent);
+            transform: translateY(-10px);
+        }
+
+        .glass-card i {
+            font-size: 2rem;
+            color: var(--accent);
+            margin-bottom: 20px;
+        }
+
+        .glass-card h3 {
+            margin-bottom: 12px;
+            font-size: 1.4rem;
+        }
+
+        .glass-card p {
+            color: var(--text-dim);
+            font-size: 0.95rem;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(226, 177, 60, 0.1);
+            color: var(--accent);
+            padding: 6px 16px;
+            border-radius: 100px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        footer {
+            padding: 60px 8%;
+            border-top: 1px solid var(--glass-border);
+            text-align: center;
+            color: var(--text-dim);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            nav { padding: 15px 5%; }
+            .hero { padding: 60px 5%; }
+            .grid { padding: 20px 5% 60px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-glow"></div>
+
+    <nav>
+        <div class="logo">DUBAI<span>PROBLEMS</span></div>
+    </nav>
+
+    <header class="hero">
+        <div class="badge">Trusted UAE Assistance</div>
+        <h1>Your Problems, Resolved Discreetly.</h1>
+        <p>Expert guidance for legal disputes, visa issues, travel bans, and scam protection in Dubai and the wider UAE. Instant help via WhatsApp.</p>
+        
+        <a href="https://wa.me/971XXXXXXXXX" class="wa-btn">
+            <i class="fab fa-whatsapp"></i> Chat with an Advisor
+        </a>
+    </header>
+
+    <div class="grid">
+        <div class="glass-card">
+            <i class="fas fa-balance-scale-left"></i>
+            <h3>Legal Support</h3>
+            <p>From labor disputes to civil cases, we provide the right roadmap to navigate UAE law.</p>
+        </div>
+
+        <div class="glass-card">
+            <i class="fas fa-fingerprint"></i>
+            <h3>Visa & Immigration</h3>
+            <p>Struggling with overstays or cancellations? We specialize in complex visa regularizations.</p>
+        </div>
+
+        <div class="glass-card">
+            <i class="fas fa-shield-halved"></i>
+            <h3>Scam Protection</h3>
+            <p>Protect yourself from investment fraud and rental scams. Fast reporting and recovery advice.</p>
+        </div>
+
+        <div class="glass-card">
+            <i class="fas fa-ban"></i>
+            <h3>Travel Bans</h3>
+            <p>Clear your status. Check for immigration or financial bans and resolve them professionally.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 DubaiProblems.com | Confidential UAE Support Services</p>
+        <p style="margin-top: 10px; font-size: 0.75rem;">Not a government entity. We provide private consultancy and professional connections.</p>
+    </footer>
+
+</body>
+</html>
